@@ -1,9 +1,9 @@
 ## Welcome to GitHub Pages
 
 [editor on GitHub](https://github.com/kuronat/play-jekyll/edit/master/index.md)
-を見ればわかるように、Markdownファイルの編集およびプレビューがブラウザから可能である。
+を開いてみよう。Markdownファイルの編集およびプレビューがブラウザから可能である。
 
-本リポジトリにコミットするたび、GitHub側でJekyllのビルドが行われる。
+本リポジトリにコミットするたび(ブラウザから編集するのもコミットの1つである)、GitHub側でJekyllのビルドが行われる。
 
 ### Jekyll Themes
 
