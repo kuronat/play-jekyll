@@ -1,32 +1,54 @@
 # ブラウザだけでGitHub Pages
-(やりかけ)
-
 ## はじめに
 GitHub Pagesとは、GitHubにおける静的ウェブサイトの公開機能である。
 任意の方法で静的ウェブサイトを構築したときの公開方法は
 [ここ](https://qiita.com/kuronat/items/99d7a2c9b566141636f2)
 に書いた。
-ところで、GitHub Pagesは、あまり言及されることはないが、
-ブラウザからブログを更新することができる(ようになってほしいので調査中)。
+ところで、GitHubの機能をよくみてみると、GitHub Pagesの作成や更新は、ブラウザ上だけで完結させることができる。
 
-## ファイルを編集
-(GitHub Pagesに限らないことであるが)Markdownファイルは、
-🖊マークのアイコンを押すと、ブラウザ上で編集することができる。
+## 大まかな流れ
+
+* リポジトリを作成
+* 好きなテーマを設定
+* `index.md`を作成
+* `_posts/YYYY-MM-DD-your-title.md`を作成
+* しばし待つ
+* 完成
+
+## Jekyll
+Jekyllとは静的サイトジェネレータである。同様のツールにHexo, Hugo, Pelicanなどがある。
+
+JekyllはGitHub Pagesでは特別扱いされている。リポジトリにコミットするたび、GitHub側でJekyllのビルドが行われる。GitHub側がビルドをしてくれるので、手元でビルドしてpushする必要がない。おかげで、ブラウザを使った操作だけで静的サイトを構築することができる。
+
+たとえば、空リポジトリがすでにあるとして、そのリポジトリの
+[Settings]を開くと、設定が行える。この操作は `_config.yml` 設定ファイルの編集&コミットと同様である。
+
+## ファイルの編集
+ブラウザから、GitHub上のリポジトリのファイルを編集することができる。
+
+* 🖊アイコンで編集
+* 🗑アイコンで削除
 
 この編集は、リポジトリに対するコミットとなる。
 
-## Jekyllで公開
-Jekyllとは静的サイトジェネレータのひとつである。似たツールにHexo, Hugo, Pelicanなどがある。
-GitHubではJekyllは特別扱いされている。
+* Jekyllビルドに対応するようなMarkdownを作成しコミット
+* コミットされたことでJekyllのビルドが実行される
 
-Jekyllであれば、ブラウザを使った操作だけでブログを立ち上げることができる。具体的には、適当な空のリポジトリを作ってから、
-[Settings]を開く。テーマの変更は [repository settings](https://github.com/kuronat/play-jekyll/settings)から行える。
-この操作によって、 `_config.yml` 設定ファイルが書き換わる。
+つまり、ブラウザ上の操作だけで静的サイトの作成・更新が行える。
 
-リポジトリにコミットするたびに、GitHub側でJekyllのビルドが行われる。
-つまり、ブラウザ上の操作だけでブログの更新が行えるということである。
+## 記事の追加
+Jekyllビルドに対応するようなMarkdownを作成するには、以下の命名ルールがある。
 
-## ディレクトリ構造
+* `index.md`
+* `_posts/YYYY-MM-DD-your-title.md`
 
-* `./index.md` 
-* `_posts/xxx.md`
+
+たとえば、
+
+* [_posts/2011-12-31-new-years-eve-is-awesome.md](https://github.com/kuronat/play-jekyll/blob/master/_posts/2011-12-31-new-years-eve-is-awesome.md)
+
+に対応するURLは
+
+* https://kuronat.github.io/play-jekyll/2011/12/31/new-years-eve-is-awesome
+
+となる。詳細は[ここ](http://jekyllrb-ja.github.io/docs/permalinks/)を見る。
