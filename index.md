@@ -1,5 +1,5 @@
 # ブラウザだけでGitHub Pages
-## 背景
+## はじめに
 GitHub Pagesとは、GitHubにおける静的ウェブサイトの公開機能である。
 任意の方法で静的ウェブサイトを構築したときの公開方法は
 [ここ](https://qiita.com/kuronat/items/99d7a2c9b566141636f2)
