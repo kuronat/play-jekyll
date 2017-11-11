@@ -8,19 +8,21 @@ GitHubにはリポジトリを利用して静的ウェブサイトを公開す�
 https://qiita.com/kuronat/items/99d7a2c9b566141636f2
 に書いた。
 
+### Markdownファイルの編集
+(GitHub Pagesに限らないことであるが)Markdownファイルは、
+<img height=24 src=https://user-images.githubusercontent.com/30833423/32690453-5c5c87c0-c73a-11e7-9b3d-de43ec603e7e.png>
+のアイコンを押すと、ブラウザ上で編集することができる。この編集は、リポジトリに対するコミットとなる。
+
 ### Jekyllによる静的ウェブサイトの公開
 Jekyllとは静的サイトジェネレータのひとつで、似たツールにHexo, Hugo, Pelicanなどがある。
-GitHubではJekyllは特別扱いされており、ブラウザを使った操作だけで
+
+GitHubではJekyllは特別扱いされており、ブラウザを使った操作だけでブログを立ち上げることができる。
 
 具体的には、適当な空のリポジトリを作ってから、
-![image](https://user-images.githubusercontent.com/30833423/32690415-ba4b241e-c739-11e7-96cb-f698f45b1066.png)
+<img src=https://user-images.githubusercontent.com/30833423/32690415-ba4b241e-c739-11e7-96cb-f698f45b1066.png height=24>
 を開く。
 
-### Markdownファイルの編集
-[editor on GitHub](https://github.com/kuronat/play-jekyll/edit/master/index.md)
-を開いてみよう。Markdownファイルの編集およびプレビューがブラウザから可能である。
-
-本リポジトリにコミットするたび(ブラウザから編集するのもコミットの1つである)、GitHub側でJekyllのビルドが行われる。
+リポジトリにコミットするたび、GitHub側でJekyllのビルドが行われる。
 
 ### Jekyllテーマの適用
 
