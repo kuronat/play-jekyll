@@ -41,7 +41,6 @@ Jekyllビルドに対応するようなMarkdownを作成するには、以下の
 * `index.md`
 * `_posts/YYYY-MM-DD-your-title.md`
 
-
 たとえば、
 
 * [_posts/2011-12-31-new-years-eve-is-awesome.md](https://github.com/kuronat/play-jekyll/blob/master/_posts/2011-12-31-new-years-eve-is-awesome.md)
@@ -51,3 +50,15 @@ Jekyllビルドに対応するようなMarkdownを作成するには、以下の
 * https://kuronat.github.io/play-jekyll/2011/12/31/new-years-eve-is-awesome
 
 となる。詳細は[ここ](http://jekyllrb-ja.github.io/docs/permalinks/)を見る。
+
+## 注意: 簡単にブログを作れるわけではない
+
+一度やってみるとわかるけど、
+ブラウザでポチポチして作った静的サイトは、ブログではないことがわかる。
+
+GitHub Pages + Jekyllは、ブログを想定しているわけではなく、
+リポジトリを紹介するためのWebサイトを想定している機能である。
+実際[View on GitHub]なんてついてるし。
+
+ブログを作りたい場合は、minimaのようなテーマを適用するか、
+あるいはCircleCIなどを使うことになると思われる。
